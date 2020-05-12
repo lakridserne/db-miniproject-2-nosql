@@ -19,18 +19,7 @@ We encountered that the file was to large so what we did was we had the files si
                mongoimport --type csv -d twitterFollowers -c followers --headerline --drop 2G.csv
 
 2)    Database operations:
-     
-      Neo4J:
-      returns 1000000 users id in 7 sec
-      ```
-      Match(n) RETURN n limit(1000000)
-      ```
-      MongoDb
-      returns 1000000 users id in 115 sec
-      ```
-      DBQuery.shellBatchSize = 1000000
-      db.followers.find()
-      ```
+   We will select 1 million rows from the database so we can inspect which users follows who.
 
 
 3)  Selecting appropriate criteria for comparison( Storage space);
@@ -47,4 +36,16 @@ We encountered that the file was to large so what we did was we had the files si
       3.364GB  
       ```
 4)
+  
+      Neo4J:
+      returns 1000000 users id in 7 sec
+      ```
+      Match(n) RETURN n limit(1000000)
+      ```
+      MongoDb
+      returns 1000000 users id in 115 sec
+      ```
+      DBQuery.shellBatchSize = 1000000
+      db.followers.find()
+      ```
 5)

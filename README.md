@@ -16,7 +16,7 @@ We encountered that the file was to large so what we did was we had the files si
      
       MongoDB
                    
-                   mongoimport --type csv -d twitterFollowers -c followers --headerline --drop 2G.csv
+               mongoimport --type csv -d twitterFollowers -c followers --headerline --drop 2G.csv
 
 2)
 3)

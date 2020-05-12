@@ -40,7 +40,6 @@ We encountered that the file was to large so what we did was we had the files si
       ```
       8.898GB
       ```
-         Storage space
      
      MongoDB:
      

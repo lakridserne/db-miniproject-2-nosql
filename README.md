@@ -8,7 +8,14 @@ The file contained listed over user’s id and who they are following.
 We encountered that the file was to large so what we did was we had the files size reduced to 2GB which worked
 
 
-1)
+1)  - Neo4J
+     Import stament: 
+                   neo4j-admin import --node=2G.csv
+     
+     -MongoDB:
+                  mongoimport --type csv -d twitterFollowers -c followers --headerline --drop 2G.csv
+
+
 2)
 3)
 4)

@@ -21,12 +21,12 @@ We encountered that the file was to large so what we did was we had the files si
 2)    Database operations:
      
       Neo4J:
-      returns 1000000 users id in 7ms
+      returns 1000000 users id in 7 sec
       ```
       Match(n) RETURN n limit(1000000)
       ```
       MongoDb
-      returns 1000000 users id in 55ms
+      returns 1000000 users id in 115 sec
       ```
       DBQuery.shellBatchSize = 1000000
       db.followers.find()

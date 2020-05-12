@@ -33,6 +33,17 @@ We encountered that the file was to large so what we did was we had the files si
       ```
 
 
-3)
+3)  Selecting appropriate criteria for comparison:
+    
+    Storage space
+      Neo4J:
+      ```
+      8.898GB
+      ```
+         Storage space
+      MongoDB:
+      ```
+      3.364GB  
+      ```
 4)
 5)

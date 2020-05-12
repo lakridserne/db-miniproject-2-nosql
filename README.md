@@ -1,6 +1,7 @@
 # db-miniproject-2-nosql
 
 Overview:
+
 In this assignment we have used MongoDB and Neo4J since it is a requirement using NoSQL Database and comparing them. The other reason we choose MongoDB and Neo4J was because we had already installed them. 
 What we then did was we tried to import a 24 Gb file into our databases. 
 The file contained listed over user’s id and who they are following. 

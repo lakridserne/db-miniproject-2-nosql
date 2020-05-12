@@ -18,7 +18,12 @@ We encountered that the file was to large so what we did was we had the files si
                    
                mongoimport --type csv -d twitterFollowers -c followers --headerline --drop 2G.csv
 
-2)
+2)    Database operations:
+     
+      Neo4J:
+           // returns 1000000 users id in 7ms
+            Match(n) RETURN n limit(1000000) 
+
 3)
 4)
 5)

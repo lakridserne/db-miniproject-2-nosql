@@ -25,6 +25,13 @@ We encountered that the file was to large so what we did was we had the files si
       ```
       Match(n) RETURN n limit(1000000)
       ```
+      MongoDb
+      returns 1000000 users id in 55ms
+      ```
+      DBQuery.shellBatchSize = 1000000
+      db.followers.find()
+      ```
+
 
 3)
 4)

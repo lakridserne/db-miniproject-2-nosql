@@ -21,28 +21,30 @@ We encountered that the file was to large so what we did was we had the files si
 2)    Database operations:
      
       Neo4J:
-      returns 1000000 users id in 7 sec
+      returns 1000000 users id in 7ms
       ```
       Match(n) RETURN n limit(1000000)
       ```
       MongoDb
-      returns 1000000 users id in 115 sec
+      returns 1000000 users id in 55ms
       ```
       DBQuery.shellBatchSize = 1000000
       db.followers.find()
       ```
 
 
-3)  Selecting appropriate criteria for comparison:
+3)  Selecting appropriate criteria for comparison( Storage space);
     
-    Storage space
       Neo4J:
+      
       ```
       8.898GB
       ```
          Storage space
-      MongoDB:
-      ```
+     
+     MongoDB:
+     
+     ```
       3.364GB  
       ```
 4)

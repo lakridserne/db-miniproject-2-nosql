@@ -91,7 +91,6 @@ We encountered that the file was to large so what we did was we had the files si
  Technical Specifications for our Machine, we ran the scripts on:
  
  CPU: Intel Core i7-8700K
- 
  GPU: Gtx 1070 8gb
  Memory: Ddr4 16gb RAM
  OS: Windows 10 (64-bit)

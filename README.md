@@ -53,4 +53,38 @@ We encountered that the file was to large so what we did was we had the files si
      We have concluded that MongoDB compared to Neo4J. That there are both advantages and disadvantages depending on what criteria is        being used. 
      We personal feel that MongoDB is more comfortable using contra Neo4J in regards complexity.
      The other thing is that mongoDB feels more opensource where as Neo4J feels more like enterprise software
+     
+     
+     
+     Cap
+     
+     MongoDB:
+     
+     MongoDB is strongly consistent by default - if you do a write and then do a read,
+     assuming the write was successful you will always be able to read the result of the write you just read.
+     This is because MongoDB is a single-master system and all reads go to the primary by default.
+     if you optionally enable reading from the secondaries then MongoDB becomes eventually consistent where
+     it's possible to read out-of-date results.
+     
+     Neo4j:
+     
+     In our understanding Neo4j has no facility for partitioning or sharding and so is not a distributed database.
+     So the CAP theorem doesn’t really apply. However there are two clustering modes available in the enterprise edition.
+     
+     
+     
+     ACID
+     
+     MongoDB:
+      
+      After the release of version 4.0, MongoDB now has support for multi-document ACID transactions,
+      which now make it a ACID-compilant at the document level.
+     
+     
+     Neo4j:
+     
+     Neo4j  [link](https://eksempel.dk)
 
+     
+     
+     

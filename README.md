@@ -56,6 +56,15 @@ We encountered that the file was to large so what we did was we had the files si
      
      
      
+     
+     
+     The reason we have chosen to use MongoDB and Neo4j for this project assignment, is because we figured out that those
+     two databases are completely different and we thought it then would give great diffrent results, when we are comparing
+     the data
+     
+     
+     
+    
      Cap
      
      MongoDB:

@@ -83,7 +83,7 @@ We encountered that the file was to large so what we did was we had the files si
      
      Neo4j:
      
-     Neo4j is ACID compliant and supports properties of ACID, a link to full overview can be found [here (https://www.graphgrid.com/neo4j-is-designed-to-be-your-source-of-truth-database)
+     Neo4j is ACID compliant and supports properties of ACID, a link to full overview can be found [here] (https://www.graphgrid.com/neo4j-is-designed-to-be-your-source-of-truth-database)
 
      
      

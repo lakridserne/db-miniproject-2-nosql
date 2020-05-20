@@ -86,5 +86,12 @@ We encountered that the file was to large so what we did was we had the files si
      Neo4j is ACID compliant and supports properties of ACID, a link to full overview can be found [here] (https://www.graphgrid.com/neo4j-is-designed-to-be-your-source-of-truth-database)
 
      
+  Misc 
+ Technical Specifications for our Machine, we ran the scripts on:
+ CPU: Intel Core i7-8700K
+ GPU: Gtx 1070 8gb
+ Memory: Ddr4 16gb RAM
+ OS: Windows 10 (64-bit)
+ Hard Drive: ssd 250gb
      
      

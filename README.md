@@ -8,7 +8,7 @@ The file contained listed over user’s id and who they are following.
 We encountered that the file was to large so what we did was we had the files size reduced to 2GB which worked
 
 
-1)  Import stament:
+1)  Import stament: This statement import the "2G.csv" which is a part from the big 24GB file we wanted to import into our database.
 
       Neo4J
                

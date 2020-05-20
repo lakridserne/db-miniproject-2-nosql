@@ -83,7 +83,7 @@ We encountered that the file was to large so what we did was we had the files si
      
      Neo4j:
      
-     Neo4j  [link](https://eksempel.dk)
+     Neo4j is ACID compliant and supports properties of ACID, a link to full overview can be found her here  [link](https://eksempel.dk)
 
      
      

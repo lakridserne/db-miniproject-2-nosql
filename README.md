@@ -67,10 +67,14 @@ We encountered that the file was to large so what we did was we had the files si
     
      Cap
      
+     CAP is a way to handle if networked database servers loose their connectivity with each other. What will happen? CAP will make us choose between consistency and availablity.
+     
+     This basically means choosing between cancelling the operation if the network fails, or proceed with the operation. If we choose to proceed with the operation, we get high availablity, but the data might not be very consistent. On the other hand, if we just cancel the operation, consistency is high, however, the database risk not being available if the server cannot talk to the other servers.
+     
      MongoDB:
      
      MongoDB is strongly consistent by default - if you do a write and then do a read,
-     assuming the write was successful you will always be able to read the result of the write you just read.
+     assuming the write was successful you will always be able to read the result of the write.
      This is because MongoDB is a single-master system and all reads go to the primary by default.
      if you optionally enable reading from the secondaries then MongoDB becomes eventually consistent where
      it's possible to read out-of-date results.
@@ -83,6 +87,8 @@ We encountered that the file was to large so what we did was we had the files si
      
      
      ACID
+     
+     ACID is practical because we can ensure that a transaction is always successful - and if it's not, none of the transactions go through. This way, we don't end up with inconsistent or corrupted data, or data that doesn't make sense.
      
      MongoDB:
       

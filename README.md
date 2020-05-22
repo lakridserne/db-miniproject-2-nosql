@@ -7,17 +7,22 @@ What we then did was we tried to import a 24 Gb file into our databases.
 The file contained listed over user’s id and who they are following. 
 We encountered that the file was to large so what we did was we had the files size reduced to 2GB which worked
 
-
+// desciption of file
+We have a big file that has a size around 24GB that tells us how many followers each twittersprofile has. The file contains a list over id´s consisting of numbers which is split into two sections, where first section is the follwers and the other section is the one being followed. 
  
- #Intro
- our task was to ......
+ ## Intro
+Our assigment is to select two or more databases of different NoSQL types and to compare their features
+and performance in storing, scaling, providing, and processing big data.
  
- Problem statement (twwiter)
- 
- Motivation 
+ ## Problem statement ()
+its interesting to analyze twitter followers. For this reason we desidef to import the data into our databases. We selected the two databases and want to compairer to each other. 
 
- We want to research and experiment the difference bewtween mongodb and Neo4j in reagads to scalability and compare the databases feature 
+## Motivation 
 
+ We want to research and experiment the difference bewtween mongodb and Neo4j in reagads to scalability, perfomence and compare the two databases features. 
+Our first thoughs is to do research on how to use on of the following operations by inserting data into the to the two databases. Then based on the speed on two databases we want to compairer the time. Antoher thought is to do rerearsh on grafe and see to see if its possible to create a grafe on mongodb which we are not sure about if its possible. We allredy know it is possiible to create it with Neo4j. 
+
+Last it would be intressting to use som big-data so we can better see the difference bewteen each database and get overview on how it effects our two databases. 
 
 1)  Import stament: This statement import the "2G.csv" file.
 

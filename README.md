@@ -21,6 +21,7 @@ We encountered that the file was to large so what we did was we had the files si
      During the import we could clearly see that MongoDB is more suited for large datasets, whereas Neo4J is more tailered to make graphs. This was for example due to the way the import worked - MongoDB was able to hadnle a much larger file.
 
 2)    Database operations:
+   Our goal is to compare Neo4J and MongoDB to compare performance, scaling and storage in processing big data.
    We will select 1 million rows from the database so we can inspect which users follows who.
 
 

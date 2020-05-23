@@ -1,20 +1,16 @@
 # db-miniproject-2-nosql
 
-Overview
-
+## Overview
 In this assignment we have used MongoDB and Neo4J since it is a requirement using NoSQL Database and comparing them. The other reason we choose MongoDB and Neo4J was because we had already installed them. 
 What we then did was we tried to import a 24 Gb file into our databases. 
 The file contained listed over user’s id and who they are following. 
 We encountered that the file was to large so what we did was we had the files size reduced to 2GB which worked
-
-// desciption of file
-We have a big file that has a size around 24GB that tells us how many followers each twittersprofile has. The file contains a list over id´s consisting of numbers which is split into two sections, where first section is the follwers and the other section is the one being followed. 
  
- ## Intro
+## Intro
 Our assigment is to select two or more databases of different NoSQL types and to compare their features
 and performance in storing, scaling, providing, and processing big data.
  
- ## Problem statement ()
+## Problem statement 
 its interesting to analyze twitter followers. For this reason we desidef to import the data into our databases. We selected the two databases and want to compairer to each other. 
 
 ## Motivation 
@@ -23,6 +19,13 @@ its interesting to analyze twitter followers. For this reason we desidef to impo
 Our first thoughs is to do research on how to use on of the following operations by inserting data into the to the two databases. Then based on the speed on two databases we want to compairer the time. Antoher thought is to do rerearsh on grafe and see to see if its possible to create a grafe on mongodb which we are not sure about if its possible. We allredy know it is possiible to create it with Neo4j. 
 
 Last it would be intressting to use som big-data so we can better see the difference bewteen each database and get overview on how it effects our two databases. 
+
+## Activity
+
+
+// desciption of file
+We have a big file that has a size around 24GB that tells us how many followers each twittersprofile has. The file contains a list over id´s consisting of numbers which is split into two sections, where first section is the follwers and the other section is the one being followed. 
+
 
 1)  Import stament: This statement import the "2G.csv" file.
 
@@ -102,7 +105,7 @@ Last it would be intressting to use som big-data so we can better see the differ
       DBQuery.shellBatchSize = 1000000
       db.followers.find()
       ```
-5)   Conclusion
+## Conclusion
       
      We have concluded that MongoDB compared to Neo4J. That there are both advantages and disadvantages depending on what criteria is        being used. 
      We personal feel that MongoDB is more comfortable using contra Neo4J in regards complexity.

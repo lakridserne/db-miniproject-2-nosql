@@ -21,23 +21,20 @@ Our first thoughs is to do research on how to use on of the following operations
 Last it would be intressting to use som big-data so we can better see the difference bewteen each database and get overview on how it effects our two databases. 
 
 ## Activity
-
-
 // desciption of file
 We have a big file that has a size around 24GB that tells us how many followers each twittersprofile has. The file contains a list over id´s consisting of numbers which is split into two sections, where first section is the follwers and the other section is the one being followed. 
 
-
 1)  Import stament: This statement import the "2G.csv" file.
 
-      Neo4J
+   Neo4J
                
-       neo4j-admin import --node=2G.csv
+        neo4j-admin import --node=2G.csv
      
-      MongoDB
+        MongoDB
                    
-       mongoimport --type csv -d twitterFollowers -c followers --headerline --drop 2G.csv
+        mongoimport --type csv -d twitterFollowers -c followers --headerline --drop 2G.csv
      
-     During the import we could clearly see that MongoDB is more suited for large datasets, whereas Neo4J is more tailered to make graphs. This was for example due to the way the import worked - MongoDB was able to hadnle a much larger file.
+     During the import we could clearly see that MongoDB is more suited for large datasets, whereas Neo4J is more tailered to make   graphs. This was for example due to the way the import worked - MongoDB was able to hadnle a much larger file.
 
 2)    Database operations:
    Our goal is to compare Neo4J and MongoDB to compare performance, scaling and storage in processing big data.
@@ -48,14 +45,14 @@ We have a big file that has a size around 24GB that tells us how many followers 
     
       Neo4J:
       
-     ```
-   8.898GB
-     ```
+      ```
+      8.898GB
+      ```
      
      MongoDB:
      
      ```
-   3.364GB  
+     3.364GB  
       ```
       
            Cap

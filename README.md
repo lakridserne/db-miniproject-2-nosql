@@ -110,7 +110,7 @@ We have a big file that has a size around 24GB that tells us how many followers 
      We have concluded that MongoDB compared to Neo4J. 
      That there are both advantages and disadvantages depending on what criteria is being used. 
      We personal feel that MongoDB is more comfortable using contra Neo4J in regards complexity.
-     The other thing is that mongoDB feels more opensource where as Neo4J feels more like enterprise software
+   
      
      
      

@@ -46,13 +46,13 @@ We have a big file that has a size around 24GB that tells us how many followers 
       Neo4J:
       
       ```
-      8.898GB
+      267GB
       ```
      
      MongoDB:
      
      ```
-     3.364GB  
+     42GB  
       ```
       
            Cap

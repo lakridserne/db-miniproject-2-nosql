@@ -10,9 +10,9 @@ We encountered that the file was to large so what we did was we had the files si
 Our assigment is to select two or more databases of different NoSQL types and to compare their features
 and performance in storing, scaling, providing, and processing big data.
 
-     The reason we have chosen to use MongoDB and Neo4j for this project assignment, is because we figured out that those
-     two databases are completely different and we thought it then would give great diffrent results, when we are comparing
-     the data, so we could get a better overview for what each database is best suited for after reviewing our results
+The reason we have chosen to use MongoDB and Neo4j for this project assignment, is because we figured out that those
+two databases are completely different and we thought it then would give great diffrent results, when we are comparing
+the data, so we could get a better overview for what each database is best suited for after reviewing our results
  
 ## Problem statement 
 its interesting to analyze twitter followers. For this reason we desidef to import the data into our databases. We selected the two databases and want to compairer to each other. 

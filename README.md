@@ -108,7 +108,7 @@ We have a big file that has a size around 24GB that tells us how many followers 
       CREATE Twitter follower
       CREATE (Twitter_follower { follower: '1234', following: '5678' }) RETURN Twitter_follower;
       
-      ![Neo4J INSERT QUERY](https://github.com/lakridserne/db-miniproject-2-nosql/blob/master/100655238_246389093126619_4640154904206245888_n.png "Logo Title Text 1")
+![Neo4J INSERT QUERY](https://github.com/lakridserne/db-miniproject-2-nosql/blob/master/100655238_246389093126619_4640154904206245888_n.png "Logo Title Text 1")
       
   MongoDB
   

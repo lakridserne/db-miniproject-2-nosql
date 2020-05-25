@@ -52,7 +52,7 @@ We have a big file that has a size around 24GB that tells us how many followers 
       Neo4J:
       
       ```
-      267GB
+      295GB
       ```
      
      MongoDB:

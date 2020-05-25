@@ -129,13 +129,13 @@ The file contains a list of IDs on all the follwers and the profiles being follo
 ## Conclusion
       
     
-     That there are both advantages and disadvantages depending on what criteria is being used. 
-     After comparing the databases practial and theoriacly, we conclued that Neo4 is optimized for grafhs.
-     MogoDB has a much weider usses for alot other things. Compaired on speed in fetching specific records, mongpdb is clearly 
-     faster. However Neo4j was never made for speed but was made for grafhs. And in regards to size, Neo4j is 7 times larger than 
-     MongoDB.  
-     In relation to CAP MongoDB has support for it , whwre Neo4j does not really support it exepet for maybe the enterprise version.
-     Both neo4j and MongoDB has a suppport for ACID however MongoDB first for it in veriosn 4.0 on document level. 
+That there are both advantages and disadvantages depending on what criteria is being used. 
+After comparing the databases practial and theoriacly, we conclued that Neo4 is optimized for grafhs.
+MogoDB has a much weider usses for alot other things. Compaired on speed in fetching specific records, mongpdb is clearly 
+faster. However Neo4j was never made for speed but was made for grafhs. And in regards to size, Neo4j is 7 times larger than 
+MongoDB.  
+In relation to CAP MongoDB has support for it , whwre Neo4j does not really support it exepet for maybe the enterprise version.
+Both neo4j and MongoDB has a suppport for ACID however MongoDB first for it in veriosn 4.0 on document level. 
    
      
      
@@ -144,7 +144,7 @@ The file contains a list of IDs on all the follwers and the profiles being follo
   
 
      
-  Misc 
+# Misc
   
  Technical Specifications for our Machine, we ran the scripts on:
  

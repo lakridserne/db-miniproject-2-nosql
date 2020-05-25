@@ -65,7 +65,7 @@ We have a big file that has a size around 24GB that tells us how many followers 
      43GB  
       ```
       
-           Cap
+     Cap
      
      CAP is a way to handle if networked database servers loose their connectivity with each other. What will happen? CAP will make us choose between consistency and availablity.
      

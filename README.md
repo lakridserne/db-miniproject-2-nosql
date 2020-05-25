@@ -26,7 +26,8 @@ Last it would be intressting to use som big-data so we can better see the differ
 
 ## Activity
 // desciption of file
-We have a big file that has a size around 24GB that tells us how many followers each twitter profile has. The file contains a list of IDs on all the follwers and the profiles being followed.
+We have a big file that has a size around 24GB that tells us how many followers each twitter profile has.
+The file contains a list of IDs on all the follwers and the profiles being followed.
 
 1)  Import stament: This statement import the "Twitter_data.csv" file.
 

@@ -114,6 +114,8 @@ We have a big file that has a size around 24GB that tells us how many followers 
       
       CREATE Twitter follower
       db.followers.insertOne( {"following": 1234, "follower": 5678})
+      
+      ![MongoDB INSERT QUERY](100495141_1407676352774106_4294128089455132672_n.png "Logo Title Text 1")
 
 
 ## Conclusion

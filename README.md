@@ -96,13 +96,16 @@ We have a big file that has a size around 24GB that tells us how many followers 
      
      Neo4j is ACID compliant and supports properties of ACID, a link to full overview can be found [here] (https://www.graphgrid.com/neo4j-is-designed-to-be-your-source-of-truth-database)
 4)
+  Neo4J:
   
-      Neo4J:
       get all users being followed by a specific user ID
-      ```
+      
       MATCH (n {following: '14911246'}) RETURN n;
-      ```
-      MongoDb
+      
+      CREATE Twitter follower
+      CREATE (Twitter_follower { follower: '1234', following: '5678' }) RETURN Twitter_follower;
+  MongoDB
+  
       returns 1000000 users id in 115 sec
       ```
       DBQuery.shellBatchSize = 1000000

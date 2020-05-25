@@ -22,15 +22,16 @@ Last it would be intressting to use som big-data so we can better see the differ
 
 ## Activity
 // desciption of file
-We have a big file that has a size around 24GB that tells us how many followers each twittersprofile has. The file contains a list over id´s consisting of numbers which is split into two sections, where first section is the follwers and the other section is the one being followed. 
+We have a big file that has a size around 24GB that tells us how many followers each twitter profile has. The file contains a list of IDs on all the follwers and the profiles being followed.
 
-1)  Import stament: This statement import the "2G.csv" file.
+1)  Import stament: This statement import the "Twitter_data.csv" file.
 
    Neo4J
                
-        neo4j-admin import --node=2G.csv
-     
-     MATCH (n {following: '14911246'}) RETURN n;
+        USING PERIODIC COMMIT 500
+        LOAD CSV FROM 'file:///twitter_data.csv' AS line
+        CREATE (:Twitter_follower { following: line[0], follower: line[1] } );
+ 
 
 
      
@@ -97,9 +98,9 @@ We have a big file that has a size around 24GB that tells us how many followers 
 4)
   
       Neo4J:
-      returns 1000000 users id in 7 sec
+      get all users being followed by a specific user ID
       ```
-      Match(n) RETURN n limit(1000000)
+      MATCH (n {following: '14911246'}) RETURN n;
       ```
       MongoDb
       returns 1000000 users id in 115 sec

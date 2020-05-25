@@ -148,14 +148,15 @@ The file contains a list of IDs on all the follwers and the profiles being follo
   
  Technical Specifications for our Machine, we ran the scripts on:
  
- CPU: Intel Core i7-8700K
+ CPU: Intel Core i7-8750H
  
- GPU: Gtx 1070 8gb
+ GPU: Gtx 1050 6gb
  
  Memory: Ddr4 16gb RAM
  
- OS: Windows 10 (64-bit)
+ OS: Ubuntu 19.10 (64-bit)
  
- Hard Drive: ssd 250gb
+ Hard Drive: ssd 138gb & SATA 5Tb  
+             
      
      

@@ -1,10 +1,4 @@
 # db-miniproject-2-nosql
-
-## Overview
-In this assignment we have used MongoDB and Neo4J since it is a requirement using NoSQL Database and comparing them. The other reason we choose MongoDB and Neo4J was because we had already installed them. 
-What we then did was we tried to import a 24 Gb file into our databases. 
-The file contained listed over user’s id and who they are following. 
-We encountered that the file was to large so what we did was we had the files size reduced to 2GB which worked
  
 ## Intro
 Our assigment is to select two or more databases of different NoSQL types and to compare their features
@@ -15,14 +9,13 @@ two databases are completely different and we thought it then would give great d
 the data, so we could get a better overview for what each database is best suited for after reviewing our results
  
 ## Problem statement 
-its interesting to analyze twitter followers. For this reason we desidef to import the data into our databases. We selected the two databases and want to compairer to each other. 
+It's interesting to analyze twitter followers and by that being able to make statistics on certain things regarding those followers. At the same time, we wanted to better understand Neo4J and MongoDB. For this reason we desided to import the data into our databases. We selected the two databases and want to compare them to each other. 
 
 ## Motivation 
+ We want to research and experiment the difference bewtween MongoDB and Neo4J in reagads to scalability, performance and compare the two databases features. 
+Our first thought was to do research on how to use one of the following operations by inserting data into the to the two databases. Then we want to comparer the speed of the two databases.
 
- We want to research and experiment the difference bewtween mongodb and Neo4j in reagads to scalability, perfomence and compare the two databases features. 
-Our first thoughs is to do research on how to use on of the following operations by inserting data into the to the two databases. Then based on the speed on two databases we want to compairer the time. Antoher thought is to do rerearsh on grafe and see to see if its possible to create a grafe on mongodb which we are not sure about if its possible. We allredy know it is possiible to create it with Neo4j. 
-
-Last it would be intressting to use som big-data so we can better see the difference bewteen each database and get overview on how it effects our two databases. 
+It would be intressting to use som big-data so we can better see the difference bewteen each database and get overview on how it effects our two databases. 
 
 ## Activity
 // desciption of file
@@ -45,16 +38,14 @@ The file contains a list of IDs on all the follwers and the profiles being follo
                    
         mongoimport --type csv -d twitterFollowers -c followers --headerline --drop twitter_data.csv
      
-     During the import we could clearly see that MongoDB is more suited for large datasets,
-     whereas Neo4J is more tailered to make   graphs. This was for example due to the way the
-     import worked - MongoDB was able to hadnle a much larger file.
+During the import we could clearly see that MongoDB is more suited for large datasets, whereas Neo4J is more tailered to make   graphs. This was for example due to the way the import worked - MongoDB was able to import a large file relatively quickly comprared with Neo4J.
 
 2)    Database operations:
    Our goal is to compare Neo4J and MongoDB to compare performance, scaling and storage in processing big data.
-   We will select 1 million rows from the database so we can inspect which users follows who.
+   In order to see this, we have opted to insert data into MongoDB and Neo4J along with retrieving selected data again.
 
 
-3)  Selecting appropriate criteria for comparison( Storage space);
+3)  Selecting appropriate criteria for comparison (storage space);
     
       Neo4J:
       
@@ -79,10 +70,9 @@ The file contains a list of IDs on all the follwers and the profiles being follo
      MongoDB is strongly consistent by default - if you do a write and then do a read,
      assuming the write was successful you will always be able to read the result of the write.
      This is because MongoDB is a single-master system and all reads go to the primary by default.
-     if you optionally enable reading from the secondaries then MongoDB becomes eventually consistent where
-     it's possible to read out-of-date results.
+     If you enable reading from the secondaries then MongoDB becomes eventually consistent where it's possible to read out-of-date results.
      
-     Neo4j:
+     Neo4J:
      
      In our understanding Neo4j has no facility for partitioning or sharding and so is not a distributed database.
      So the CAP theorem doesn’t really apply. However there are two clustering modes available in the enterprise edition.
@@ -105,22 +95,26 @@ The file contains a list of IDs on all the follwers and the profiles being follo
 4)
   Neo4J:
   
-      Get all users being followed by a specific user ID
+  Get all users being followed by a specific user ID
+      
       MATCH (n {following: '107'}) RETURN n;
       
-      CREATE Twitter follower
+CREATE Twitter follower
+
       CREATE (Twitter_follower { follower: '1234', following: '5678' }) RETURN Twitter_follower;
       
 ![Neo4J INSERT QUERY](https://github.com/lakridserne/db-miniproject-2-nosql/blob/master/100655238_246389093126619_4640154904206245888_n.png "Logo Title Text 1")
       
   MongoDB
   
-      Get all users being followed by a specific user ID      
+ Get all users being followed by a specific user ID      
+ 
       db.followers.find({following: 107 })
       
       
       
-      CREATE Twitter follower
+ CREATE Twitter follower
+ 
       db.followers.insertOne( {"following": 1234, "follower": 5678})
       
 ![MongoDB INSERT QUERY](https://github.com/lakridserne/db-miniproject-2-nosql/blob/master/100495141_1407676352774106_4294128089455132672_n.png "Logo Title Text 1")
@@ -129,13 +123,13 @@ The file contains a list of IDs on all the follwers and the profiles being follo
 ## Conclusion
       
     
-That there are both advantages and disadvantages depending on what criteria is being used. 
-After comparing the databases practial and theoriacly, we conclued that Neo4 is optimized for grafhs.
-MogoDB has a much weider usses for alot other things. Compaired on speed in fetching specific records, mongpdb is clearly 
-faster. However Neo4j was never made for speed but was made for grafhs. And in regards to size, Neo4j is 7 times larger than 
+There are both advantages and disadvantages between choosing MongoDB and Neo4J depending on what criteria is being used and ultimately the use case of the application using the database.
+After comparing the databases practically and theoretically, we conclued that Neo4J is optimized for graphs.
+MogoDB has a much wider use case for a lot of things. Compared on speed in fetching specific records, MongpDB is clearly 
+faster. However Neo4j was never made for speed but was made for graphs. And in regards to size, Neo4J is 7 times larger than 
 MongoDB.  
-In relation to CAP MongoDB has support for it , whwre Neo4j does not really support it exepet for maybe the enterprise version.
-Both neo4j and MongoDB has a suppport for ACID however MongoDB first for it in veriosn 4.0 on document level. 
+In relation to CAP MongoDB has support for it , where Neo4j does not really support it exepet for maybe the enterprise version.
+Both neo4j and MongoDB has a suppport for ACID however MongoDB first for it in veriosn 4.0 on document level.
    
      
      

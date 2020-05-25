@@ -111,6 +111,10 @@ We have a big file that has a size around 24GB that tells us how many followers 
   
       Get all users being followed by a specific user ID      
       db.followers.find({following: 107 })
+      
+      CREATE Twitter follower
+      db.followers.insertOne( {"following": 1234, "follower": 5678})
+
 
 ## Conclusion
       

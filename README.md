@@ -42,7 +42,7 @@ We have a big file that has a size around 24GB that tells us how many followers 
      
    MongoDB
                    
-        mongoimport --type csv -d twitterFollowers -c followers --headerline --drop 2G.csv
+        mongoimport --type csv -d twitterFollowers -c followers --headerline --drop twitter_data.csv
      
      During the import we could clearly see that MongoDB is more suited for large datasets, whereas Neo4J is more tailered to make   graphs. This was for example due to the way the import worked - MongoDB was able to hadnle a much larger file.
 

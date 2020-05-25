@@ -30,6 +30,11 @@ We have a big file that has a size around 24GB that tells us how many followers 
                
         neo4j-admin import --node=2G.csv
      
+     MATCH (n {following: '14911246'}) RETURN n;
+
+
+     
+     
         MongoDB
                    
         mongoimport --type csv -d twitterFollowers -c followers --headerline --drop 2G.csv

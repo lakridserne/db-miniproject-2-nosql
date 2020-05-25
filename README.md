@@ -30,7 +30,7 @@ We have a big file that has a size around 24GB that tells us how many followers 
 
 1)  Import stament: This statement import the "Twitter_data.csv" file.
 
-   Neo4J
+  Neo4J
                
         USING PERIODIC COMMIT 500
         LOAD CSV FROM 'file:///twitter_data.csv' AS line
@@ -40,7 +40,7 @@ We have a big file that has a size around 24GB that tells us how many followers 
 
      
      
-        MongoDB
+   MongoDB
                    
         mongoimport --type csv -d twitterFollowers -c followers --headerline --drop 2G.csv
      

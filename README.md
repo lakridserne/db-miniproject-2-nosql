@@ -103,15 +103,13 @@ We have a big file that has a size around 24GB that tells us how many followers 
   Neo4J:
   
       get all users being followed by a specific user ID
-      
       MATCH (n {following: '107'}) RETURN n;
       
       CREATE Twitter follower
       CREATE (Twitter_follower { follower: '1234', following: '5678' }) RETURN Twitter_follower;
   MongoDB
   
-      get all users being followed by a specific user ID
-      
+      ## get all users being followed by a specific user ID      
       db.followers.find({following: 107 })
 
 ## Conclusion

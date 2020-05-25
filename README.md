@@ -62,7 +62,7 @@ We have a big file that has a size around 24GB that tells us how many followers 
      MongoDB:
      
      ```
-     42GB  
+     43GB  
       ```
       
            Cap

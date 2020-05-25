@@ -104,17 +104,16 @@ We have a big file that has a size around 24GB that tells us how many followers 
   
       get all users being followed by a specific user ID
       
-      MATCH (n {following: '14911246'}) RETURN n;
+      MATCH (n {following: '107'}) RETURN n;
       
       CREATE Twitter follower
       CREATE (Twitter_follower { follower: '1234', following: '5678' }) RETURN Twitter_follower;
   MongoDB
   
-      returns 1000000 users id in 115 sec
-      ```
-      DBQuery.shellBatchSize = 1000000
-      db.followers.find()
-      ```
+      get all users being followed by a specific user ID
+      
+      db.followers.find({following: 107 })
+
 ## Conclusion
       
      We have concluded that MongoDB compared to Neo4J. 
